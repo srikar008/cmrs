@@ -1,0 +1,43 @@
+[debug] [2021-01-28T19:35:59.028Z] ----------------------------------------------------------------------
+[debug] [2021-01-28T19:35:59.031Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\ACER\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2021-01-28T19:35:59.031Z] CLI Version:   9.2.2
+[debug] [2021-01-28T19:35:59.031Z] Platform:      win32
+[debug] [2021-01-28T19:35:59.031Z] Node Version:  v14.15.4
+[debug] [2021-01-28T19:35:59.032Z] Time:          Fri Jan 29 2021 01:05:59 GMT+0530 (India Standard Time)
+[debug] [2021-01-28T19:35:59.032Z] ----------------------------------------------------------------------
+[debug] [2021-01-28T19:35:59.032Z] 
+[debug] [2021-01-28T19:35:59.038Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-01-28T19:35:59.039Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\ACER\Desktop\cms\cmr_cms\SMS
+
+Before we get started, keep in mind:
+
+  * You are initializing in an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2021-01-28T19:36:05.040Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/cms888cmr [none]
+[debug] [2021-01-28T19:36:26.125Z] Failed to make request to https://firebase.googleapis.com/v1beta1/projects/cms888cmr
+[debug] [2021-01-28T19:36:26.337Z] FirebaseError: Failed to make request to https://firebase.googleapis.com/v1beta1/projects/cms888cmr
+    at Client.doRequest (C:\Users\ACER\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:194:19)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async Client.request (C:\Users\ACER\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:93:20)
+    at async Object.getFirebaseProject (C:\Users\ACER\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:289:21)
+    at async Object.doSetup [as project] (C:\Users\ACER\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\features\project.js:84:27)
+    at async init (C:\Users\ACER\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\index.js:19:9)
+[error] 
+[error] Error: Failed to get Firebase project cms888cmr. Please make sure the project exists and your account has permission to access it.
